@@ -7,11 +7,18 @@
     </head>
     <body style='padding: 25px;'>
         <h3>Draw Something!</h3>
+        <div id='hideable'>
+        <form>
+            <input name='input' id='input' type='number' style='width: 150px;' min='0' max='50' placeholder='Width of table (1-50)'>
+        </form>
+        <button id='run'>Run</button>
+        </div>
+        <br />
         <button id='reset'>Reset</button>
         <button id='invert'>invert</button>
         <br />
         <br />
-        <div id='container' style='display: flex; justify-content: center; flex-wrap: wrap; width: 50vw; height: 50vw;'>
+        <div id='container' style='display: grid; width: 50vw; height: 50vw;'>
         </div>
     </body>
 </html>
